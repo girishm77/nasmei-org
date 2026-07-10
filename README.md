@@ -1,6 +1,6 @@
-# DigitalOcean Static Site
+# NASMEI Website
 
-This repository is a GitHub-ready static website scaffold designed for DigitalOcean App Platform.
+This repository is a GitHub-ready static website scaffold for `nasmei.org`, designed for DigitalOcean App Platform.
 
 ## Structure
 
@@ -23,14 +23,14 @@ Then open `http://localhost:8080`.
 Create an empty GitHub repository, then run:
 
 ```bash
-git remote add origin git@github.com:girishm77/REPOSITORY_NAME.git
+git remote add origin git@github.com:girishm77/nasmei-org.git
 git push -u origin main
 ```
 
 If using HTTPS instead of SSH:
 
 ```bash
-git remote add origin https://github.com/girishm77/REPOSITORY_NAME.git
+git remote add origin https://github.com/girishm77/nasmei-org.git
 git push -u origin main
 ```
 
@@ -46,4 +46,4 @@ Recommended settings:
 - Output directory: `public`
 - Autodeploy: enabled
 
-If using the `.do/app.yaml` spec, replace `REPOSITORY_NAME` and any domain placeholders before applying it.
+If using the `.do/app.yaml` spec, confirm DigitalOcean has access to `girishm77/nasmei-org` before applying it.

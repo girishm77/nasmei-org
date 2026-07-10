@@ -2,11 +2,11 @@
 
 ## Goal
 
-Host this static website from a GitHub repository using DigitalOcean App Platform.
+Host `nasmei.org` from a GitHub repository using DigitalOcean App Platform.
 
 ## One-Time Setup
 
-1. Create a GitHub repository under `girishm77`.
+1. Create a GitHub repository under `girishm77` named `nasmei-org`.
 2. Push this local repository to GitHub.
 3. In DigitalOcean, go to App Platform and create a new app from GitHub.
 4. Authorize DigitalOcean to read the selected GitHub repository.
@@ -17,15 +17,24 @@ Host this static website from a GitHub repository using DigitalOcean App Platfor
 
 ## Domain Mapping
 
+Primary domain:
+
+- `nasmei.org`
+
+Alias domain:
+
+- `www.nasmei.org`
+
 After the app deploys:
 
 1. Open the app in DigitalOcean.
 2. Go to Networking.
-3. Add the custom domain.
-4. Follow the DNS records DigitalOcean provides.
-5. Wait for DNS and certificate validation.
+3. Add `nasmei.org` as the primary custom domain.
+4. Add `www.nasmei.org` as an alias.
+5. Follow the DNS records DigitalOcean provides.
+6. Wait for DNS and certificate validation.
 
-If DigitalOcean manages DNS for the domain, add the domain to the DigitalOcean account first and use the records it recommends. If another registrar or DNS provider manages the domain, add the records there.
+The DigitalOcean dashboard already shows one domain in the account. If that is `nasmei.org`, App Platform can use the `zone: nasmei.org` entries in `.do/app.yaml` to let DigitalOcean manage the app domain records. If DNS is managed outside DigitalOcean, add the records at the external DNS provider instead.
 
 ## Update Workflow
 
@@ -53,6 +62,5 @@ After each deploy, check:
 
 ## Placeholder Values To Replace
 
-- `REPOSITORY_NAME` in `.do/app.yaml`
 - Site title and copy in `public/index.html`
-- Domain notes after you choose the live domain
+- Any final DNS records shown by DigitalOcean during domain verification
