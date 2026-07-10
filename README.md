@@ -1,12 +1,14 @@
 # NASMEI Website
 
-This repository is a GitHub-ready static website scaffold for `nasmei.org`, designed for DigitalOcean App Platform.
+This repository is a GitHub-ready static snapshot of the live `nasmei.org` website, designed for DigitalOcean App Platform.
 
 ## Structure
 
-- `public/` - static website files served by DigitalOcean.
+- `public/` - mirrored static website files served by DigitalOcean.
 - `.do/app.yaml` - DigitalOcean App Platform specification template.
 - `docs/deployment-runbook.md` - setup, DNS, and maintenance notes.
+- `docs/live-site-mirror-manifest.tsv` - source URL manifest from the live-site crawl.
+- `docs/live-site-mirror-errors.tsv` - crawl errors from the live-site mirror, if any.
 
 ## Local Preview
 
@@ -47,3 +49,7 @@ Recommended settings:
 - Autodeploy: enabled
 
 If using the `.do/app.yaml` spec, confirm DigitalOcean has access to `girishm77/nasmei-org` before applying it.
+
+## Live Site Snapshot
+
+The first version of this repository was mirrored from `https://nasmei.org/` on July 10, 2026. It includes same-domain HTML pages, images, PDFs, CSS, and JavaScript reachable from the live site. External CDN scripts and styles remain externally linked.

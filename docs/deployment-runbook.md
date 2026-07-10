@@ -4,6 +4,14 @@
 
 Host `nasmei.org` from a GitHub repository using DigitalOcean App Platform.
 
+## Source of Truth
+
+The starting point for this repository is a static mirror of the live `https://nasmei.org/` website captured on July 10, 2026. The mirror manifest is saved at `docs/live-site-mirror-manifest.tsv`.
+
+Known mirror caveat:
+
+- The live site links to `/checkout`, but that route returned `404 Not Found` during the crawl and was not included.
+
 ## One-Time Setup
 
 1. Create a GitHub repository under `girishm77` named `nasmei-org`.
