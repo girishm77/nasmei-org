@@ -817,7 +817,7 @@ body::before {
   inset: 0 auto 0 0 !important;
   width: var(--nasmei-rail) !important;
   min-height: 100vh;
-  padding: 26px 22px;
+  padding: 22px 22px;
   background:
     linear-gradient(180deg, rgba(11, 85, 79, 0.42), transparent 36%),
     linear-gradient(180deg, var(--nasmei-rail-bg), var(--nasmei-rail-bg-2));
@@ -854,7 +854,7 @@ body::before {
 
 #brand-name {
   width: 100%;
-  margin: 0 0 28px;
+  margin: 0 0 22px;
 }
 
 #brand-name .navbar-brand {
@@ -872,7 +872,7 @@ body::before {
 }
 
 #brand-name img {
-  width: 154px !important;
+  width: 130px !important;
   height: auto;
   padding: 0;
   border-radius: 4px;
@@ -900,13 +900,13 @@ body::before {
 
 #top-nav .navbar-nav > li {
   display: block;
-  margin: 0 0 6px;
+  margin: 0 0 4px;
 }
 
 #top-nav .navbar-nav > li > a {
   position: relative;
   display: block;
-  padding: 10px 10px 10px 34px;
+  padding: 9px 10px 9px 34px;
   border-radius: var(--nasmei-radius);
   color: rgba(255, 255, 255, 0.88);
   font-size: 0.96rem;
@@ -952,7 +952,7 @@ body::before {
   display: block;
   position: static;
   min-width: 0;
-  margin: 2px 0 12px 34px;
+  margin: 0 0 8px 34px;
   padding: 0 0 0 10px;
   border: 0;
   border-left: 1px solid rgba(215, 162, 71, 0.34);
@@ -962,7 +962,7 @@ body::before {
 }
 
 #top-nav .dropdown-menu > li > a {
-  padding: 7px 8px;
+  padding: 6px 8px;
   border-radius: 6px;
   color: rgba(255, 255, 255, 0.68);
   font-size: 0.82rem;
@@ -983,15 +983,15 @@ body::before {
 }
 
 #top-nav .navbar-nav > li > a[href="/account"] {
-  margin-top: 18px;
+  margin-top: 14px;
   border: 1px solid rgba(215, 162, 71, 0.52);
   background: rgba(215, 162, 71, 0.12);
   color: #ffe0a0;
 }
 
 .nasmei-rail-links {
-  margin-top: 28px;
-  padding-top: 24px;
+  margin-top: 18px;
+  padding-top: 18px;
   border-top: 1px solid rgba(215, 162, 71, 0.46);
 }
 

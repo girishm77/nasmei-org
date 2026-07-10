@@ -2,6 +2,7 @@
   var currentPath = window.location.pathname.replace(/\/index\.html$/, "").replace(/\/$/, "") || "/";
   var links = document.querySelectorAll("#top-nav a[href]");
   var nav = document.querySelector("#top-nav");
+  var navCollapse = document.querySelector("#top-nav-collapse");
 
   links.forEach(function (link) {
     var href = link.getAttribute("href");
@@ -26,13 +27,13 @@
     });
   });
 
-  if (nav && !document.querySelector(".nasmei-rail-links")) {
+  if (navCollapse && !document.querySelector(".nasmei-rail-links")) {
     var railLinks = document.createElement("div");
     railLinks.className = "nasmei-rail-links";
     railLinks.innerHTML =
       '<a href="https://www.linkedin.com/company/104914809/" target="_blank" rel="noopener noreferrer" aria-label="NASMEI on LinkedIn">' +
       '<span aria-hidden="true">in</span><strong>LinkedIn</strong></a>';
-    nav.appendChild(railLinks);
+    navCollapse.appendChild(railLinks);
   }
 
   var backToTop = document.createElement("button");
